@@ -1,10 +1,12 @@
-import s from './TodoList.module.css';
-export const TodoItem = ({ id, completed, todo }) => {
+import s from "./TodoList.module.css";
+export const TodoItem = ({ id, completed, todo, handleDeleteTodos }) => {
   return (
     <li className={s.item}>
-      <input type='checkbox' />
+      <input type="checkbox" />
       <span>{todo}</span>
-      <button className='btn border'>Delete</button>
+      <button onClick={() => handleDeleteTodos(id)} className="btn border">
+        Delete
+      </button>
     </li>
   );
 };

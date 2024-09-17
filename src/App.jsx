@@ -1,13 +1,13 @@
-import { ColorPicker } from './components/ColorPicker/ColorPicker';
-import { Counter } from './components/Counter/Counter';
-import { TodoList } from './components/TodoList/TodoList';
+import { ColorPicker } from "./components/ColorPicker/ColorPicker";
+import { Counter } from "./components/Counter/Counter";
+import { TodoList } from "./components/TodoList/TodoList";
 
 const App = () => {
   return (
     <div>
-      <Counter />
+      {/* <Counter /> */}
       {/* <ColorPicker /> */}
-      {/* <TodoList /> */}
+      <TodoList />
     </div>
   );
 };
